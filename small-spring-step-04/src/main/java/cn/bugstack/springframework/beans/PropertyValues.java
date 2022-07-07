@@ -4,9 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
- * 公众号：bugstack虫洞栈
- * Create by 小傅哥(fustack)
+ * 属性信息
+ * 创建出一个用于传递类中属性信息的类，因为属性可能会有很多，所以还需要定义一个集合包装下。
  */
 public class PropertyValues {
 

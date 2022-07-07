@@ -13,9 +13,10 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
- * 公众号：bugstack虫洞栈
- * Create by 小傅哥(fustack)
+ * Bean 属性填充
+ * 1、在 applyPropertyValues 中，通过获取 beanDefinition.getPropertyValues() 循环进行属性填充操作，
+ * 如果遇到的是 BeanReference，那么就需要递归获取 Bean 实例，调用 getBean 方法
+ * 2、当把依赖的 Bean 对象创建完成后，会递归回现在属性填充中。这里需要注意我们并没有去处理循环依赖的问题，这部分内容较大
  */
 public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFactory {
 
