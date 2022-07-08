@@ -5,6 +5,11 @@ import cn.hutool.core.lang.Assert;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+/**
+ * 1.在获取资源的实现中，主要是把三种不同类型的资源处理方式进行了包装，分为：判断是否为ClassPath、URL以及文件
+ * 2.虽然 DefaultResourceLoader 类实现的过程简单，但这也是设计模式约定的具体结果，
+ * 像是这里不会让外部调用放知道过多的细节，而是仅关心具体调用结果即可
+ */
 public class DefaultResourceLoader implements ResourceLoader {
 
     @Override

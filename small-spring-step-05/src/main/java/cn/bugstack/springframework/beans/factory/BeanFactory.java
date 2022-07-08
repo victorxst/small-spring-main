@@ -3,9 +3,8 @@ package cn.bugstack.springframework.beans.factory;
 import cn.bugstack.springframework.beans.BeansException;
 
 /**
- * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
- * 公众号：bugstack虫洞栈
- * Create by 小傅哥(fustack)
+ * BeanFactory，已经存在的 Bean 工厂接口用于获取 Bean 对象，这次新增加了按照类型获取 Bean 的方法：
+ * <T> T getBean(String name, Class<T> requiredType)
  */
 public interface BeanFactory {
 
